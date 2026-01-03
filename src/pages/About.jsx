@@ -10,7 +10,7 @@ const About = () => {
 
                     {/* Mission Section */}
                     <section>
-                        <p className="text-center" style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.2rem', color: '#594a4e' }}>
+                        <p className="text-center text-justify" style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.2rem', color: '#594a4e' }}>
                             At Tellionsat Aftercare, our mission is to provide a safe, nurturing, and stimulating environment where children can relax, learn, and grow after their school day. We are dedicated to supporting families by offering high-quality care that balances educational support with creative play.
                         </p>
                     </section>

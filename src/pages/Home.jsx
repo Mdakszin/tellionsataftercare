@@ -31,7 +31,7 @@ const Home = () => {
                     <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', alignItems: 'center', gap: '4rem' }}>
                         <div className="about-text">
                             <h2 style={{ color: '#FF8BA7' }}>Nurturing Young Minds</h2>
-                            <p className="mb-4">
+                            <p className="mb-4 text-justify">
                                 At Tellionsat Aftercare, we believe every child deserves a space to grow, learn, and play.
                                 Our dedicated team provides a balanced program of educational support and creative activities.
                             </p>

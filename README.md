@@ -1,16 +1,75 @@
-# React + Vite
+# Tellionsat Aftercare Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Tellionsat Logo](src/assets/tellionsat_logo-removebg-preview.png)
 
-Currently, two official plugins are available:
+A modern, responsive website for **Tellionsat Aftercare**, designed to showcase the facility's safe, nurturing, and fun environment for children.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Site:** [tellionsat-aftercare.netlify.com](https://tellionsat-aftercare.netlify.com)
 
-## React Compiler
+## 📋 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Home Page**: Engaging hero section with video background, showcasing key features like "Fun & Learning", "Other Activities", and "Creative Arts".
+-   **Gallery**: A visual showcase of the playground, classrooms, and activities.
+-   **About Us**: Mission statement and values, featuring an integrated **Google Map** for easy location finding.
+-   **Global Navigation**: Sticky navbar for easy access to all sections.
+-   **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
+-   **Contact Integration**: Direct WhatsApp link in the footer for quick inquiries.
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **Frontend**: [React](https://reactjs.org/) (v19)
+-   **Build Tool**: [Vite](https://vitejs.dev/)
+-   **Routing**: [React Router DOM](https://reactrouter.com/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Styling**: Custom CSS with a global design system (variables for colors, typography, and spacing).
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed.
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/tellionsataftercare.git
+    cd tellionsataftercare
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+    The app will be available at `http://localhost:5173`.
+
+### Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist` folder, ready for deployment.
+
+## 📍 Location
+
+**Tellionsat Aftercare**
+5953 Apple Cres, Roodekop
+Germiston, 1401
+
+## 📞 Contact
+
+-   **Phone/WhatsApp**: [078 167 3574](https://wa.me/27781673574?text=Hi%2C%20I%27d%20like%20to%20know%20more)
+-   **Email**: info@tellionsat.co.za
+-   **Hours**: Mon - Fri: 13:00 PM - 17:00 PM
+
+---
+
+© 2026 Tellionsat Aftercare. Made with love by Odwa Mdanyana.

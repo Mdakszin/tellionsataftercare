@@ -58,7 +58,7 @@ const Home = () => {
                     <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
                         {[
                             { title: 'Fun & Learning', desc: 'Balances education with recreational activities.', color: '#FDECF0' },
-                            { title: 'Healthy Meals', desc: 'Nutritious snacks and meals provided daily.', color: '#E8F5E9' },
+                            { title: 'Other Activities', desc: 'Engaging games and physical activities for everyone.', color: '#E8F5E9' },
                             { title: 'Creative Arts', desc: 'Art rooms dedicated to expression and creativity.', color: '#FFF3E0' }
                         ].map((feature, idx) => (
                             <div key={idx} style={{ padding: '30px', backgroundColor: feature.color, borderRadius: '20px', transition: 'transform 0.3s' }}>

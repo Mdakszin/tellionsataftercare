@@ -15,8 +15,16 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="navbar" style={{ backgroundColor: 'white', padding: '15px 0', borderBottom: '2px solid #eee' }}>
-            <div className="container flex items-center justify-between">
+        <nav className="navbar" style={{
+            backgroundColor: 'white',
+            padding: '15px 40px',
+            borderBottom: '2px solid #eee',
+            position: 'sticky',
+            top: 0,
+            zIndex: 1000,
+            width: '100%'
+        }}>
+            <div className="flex items-center justify-between" style={{ width: '100%' }}>
                 <div className="logo flex items-center">
                     <img src={logo} alt="Tellionsat" style={{ height: '50px', marginRight: '10px' }} />
                     <span style={{ fontWeight: 'bold', fontSize: '1.25rem', color: '#FF8BA7' }}>Tellionsat Aftercare</span>

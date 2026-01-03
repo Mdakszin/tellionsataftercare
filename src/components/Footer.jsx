@@ -4,8 +4,8 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: '#FDECF0', paddingTop: '60px', paddingBottom: '30px', borderTop: '5px solid #FF8BA7', marginTop: 'auto' }}>
-            <div className="container">
+        <footer style={{ backgroundColor: '#FDECF0', paddingTop: '60px', paddingBottom: '30px', borderTop: '5px solid #FF8BA7', marginTop: 'auto', width: '100%', paddingLeft: '40px', paddingRight: '40px' }}>
+            <div>
                 <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
 
                     {/* Brand Column */}

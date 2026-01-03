@@ -59,28 +59,63 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
-            {isOpen && (
-                <div style={{ position: 'absolute', top: '70px', left: 0, width: '100%', background: 'white', padding: '20px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', zIndex: 100 }}>
-                    <ul className="flex" style={{ flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-                        {navLinks.map((link) => (
-                            <li key={link.name}>
-                                <NavLink
-                                    to={link.path}
-                                    onClick={() => setIsOpen(false)}
-                                    style={({ isActive }) => ({
-                                        color: isActive ? '#FF8BA7' : '#33272a',
-                                        fontWeight: isActive ? '700' : '500',
-                                        fontSize: '1.2rem'
-                                    })}
-                                >
-                                    {link.name}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+            {/* Mobile Menu Overlay */}
+            <div
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    right: 0,
+                    width: '100%',
+                    height: '100vh',
+                    backgroundColor: '#FF8BA7',
+                    zIndex: 999,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    transition: 'clip-path 0.6s cubic-bezier(0.7, 0, 0.3, 1)',
+                    clipPath: isOpen ? 'circle(150% at calc(100% - 40px) 40px)' : 'circle(0px at calc(100% - 40px) 40px)',
+                    pointerEvents: isOpen ? 'all' : 'none'
+                }}
+            >
+                <button
+                    onClick={toggleMenu}
+                    style={{
+                        position: 'absolute',
+                        top: '25px',
+                        right: '20px',
+                        background: 'none',
+                        border: 'none',
+                        cursor: 'pointer',
+                        color: 'white'
+                    }}
+                >
+                    <X size={32} />
+                </button>
+
+                <ul className="flex" style={{ flexDirection: 'column', alignItems: 'center', gap: '40px' }}>
+                    {navLinks.map((link) => (
+                        <li key={link.name}>
+                            <NavLink
+                                to={link.path}
+                                onClick={() => setIsOpen(false)}
+                                style={({ isActive }) => ({
+                                    color: 'white',
+                                    fontWeight: '700',
+                                    fontSize: '2rem',
+                                    textDecoration: 'none',
+                                    opacity: isOpen ? 1 : 0,
+                                    transform: isOpen ? 'translateY(0)' : 'translateY(20px)',
+                                    transition: 'opacity 0.4s ease, transform 0.4s ease',
+                                    transitionDelay: isOpen ? '0.2s' : '0s'
+                                })}
+                            >
+                                {link.name}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
     );
 };

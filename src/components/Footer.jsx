@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/tellionsat_logo-removebg-preview.png';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -47,18 +47,25 @@ const Footer = () => {
                             </li>
                             <li style={{ marginBottom: '15px', display: 'flex', gap: '12px', color: '#594a4e' }}>
                                 <Clock size={20} color="#FF8BA7" />
-                                <span>Mon - Fri: 12:00 PM - 6:00 PM</span>
+                                <span>Mon - Fri: 13:00 PM -17:00 PM</span>
                             </li>
-                            <li style={{ marginBottom: '15px', display: 'flex', gap: '12px', color: '#594a4e' }}>
-                                <Mail size={20} color="#FF8BA7" />
-                                <span>info@tellionsat.co.za</span>
+                            <li style={{ marginBottom: '15px' }}>
+                                <a
+                                    href="https://wa.me/27781673574?text=Hi%2C%20I%27d%20like%20to%20know%20more"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ display: 'flex', gap: '12px', color: '#594a4e', alignItems: 'center', textDecoration: 'none' }}
+                                >
+                                    <MessageCircle size={20} color="#FF8BA7" />
+                                    <span>078 167 3574</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="footer-bottom" style={{ borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: '20px', textAlign: 'center', color: '#888', fontSize: '0.9rem' }}>
-                    <p>© {new Date().getFullYear()} Tellionsat Aftercare. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Tellionsat Aftercare. All rights reserved. Made with love by Odwa Mdanyana</p>
                 </div>
             </div>
         </footer>

@@ -36,13 +36,17 @@
   background-color: #ff6b8e;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* This is crucial for consistent width calculations */
 }
 
 body {
+  margin: 0;
+  /* Removes default body margin */
+  padding: 0;
   font-family: var(--font-family);
   background-color: var(--color-accent);
   color: var(--color-text);

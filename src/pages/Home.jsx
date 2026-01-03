@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
 import heroVideo from '../assets/hero-daycare.mp4';
 import readingImg from '../assets/teacher-reading.jpg';
+import SEO from '../components/SEO';
 
 const Home = () => {
     return (
         <div className="home-page">
+            <SEO
+                title="Home"
+                description="Welcome to Tellionsat Aftercare in Roodekop, Germiston. We provide a safe, nurturing environment with educational support, creative arts, and fun activities."
+            />
             {/* Hero Section */}
             <section className="hero" style={{ position: 'relative', height: '80vh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', textAlign: 'center' }}>
                 <div className="overlay" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.3)', zIndex: 1 }}></div>

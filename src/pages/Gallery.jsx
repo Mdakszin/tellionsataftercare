@@ -1,18 +1,23 @@
-import galleryArt from '../assets/gallery-artroom.jpg';
-import galleryClass from '../assets/gallery-classroom.jpg';
-import galleryOutdoor from '../assets/gallery-outdoor.jpg';
-import galleryPlayground from '../assets/gallery-playground.jpg';
+import gallery1 from '../assets/gallery-artroom.jpg';
+import gallery2 from '../assets/gallery-classroom.jpg';
+import gallery3 from '../assets/gallery-outdoor.jpg';
+import gallery4 from '../assets/gallery-playground.jpg';
+import SEO from '../components/SEO';
 
 const Gallery = () => {
     const images = [
-        { src: galleryPlayground, alt: "Outdoor Playground", title: "Fun Outdoors" },
-        { src: galleryClass, alt: "Modern Classroom", title: "Learning Spaces" },
-        { src: galleryArt, alt: "Art Room", title: "Creative Arts" },
-        { src: galleryOutdoor, alt: "Outdoor Activities", title: "Active Play" },
+        { src: gallery4, alt: "Outdoor Playground", title: "Fun Outdoors" },
+        { src: gallery2, alt: "Modern Classroom", title: "Learning Spaces" },
+        { src: gallery1, alt: "Art Room", title: "Creative Arts" },
+        { src: gallery3, alt: "Outdoor Activities", title: "Active Play" },
     ];
 
     return (
         <div className="gallery-page py-5">
+            <SEO
+                title="Gallery"
+                description="View our facilities including classrooms, playgrounds, and art rooms. See how children learn and play at Tellionsat Aftercare."
+            />
             <div className="container">
                 <div className="text-center mb-4">
                     <h1 style={{ color: '#FF8BA7' }}>Our Gallery</h1>

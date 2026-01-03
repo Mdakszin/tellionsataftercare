@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tellionsat-aftercare.netlify.com/sitemap.xml

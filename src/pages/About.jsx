@@ -1,9 +1,15 @@
 import { MapPin } from 'lucide-react';
 
+import SEO from '../components/SEO';
+
 const About = () => {
     return (
-        <div className="about-page">
-            <div className="container py-5">
+        <div className="about-page py-5">
+            <SEO
+                title="About Us"
+                description="Learn about our mission to provide safe and stimulating aftercare. Located at 5953 Apple Cres, Roodekop, Germiston."
+            />
+            <div className="container">
                 <h1 className="text-center mb-4" style={{ color: '#FF8BA7' }}>About Us</h1>
 
                 <div className="flex" style={{ flexDirection: 'column', gap: '3rem' }}>

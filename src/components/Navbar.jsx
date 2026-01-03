@@ -17,7 +17,6 @@ const Navbar = () => {
     return (
         <nav className="navbar" style={{
             backgroundColor: 'white',
-            padding: '15px 40px',
             borderBottom: '2px solid #eee',
             position: 'sticky',
             top: 0,
@@ -27,7 +26,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between" style={{ width: '100%' }}>
                 <div className="logo flex items-center">
                     <img src={logo} alt="Tellionsat" style={{ height: '50px', marginRight: '10px' }} />
-                    <span style={{ fontWeight: 'bold', fontSize: '1.25rem', color: '#FF8BA7' }}>Tellionsat Aftercare</span>
+                    <span className="logo-text" style={{ fontWeight: 'bold', color: '#FF8BA7' }}>Tellionsat Aftercare</span>
                 </div>
 
                 {/* Desktop Menu */}
@@ -55,7 +54,12 @@ const Navbar = () => {
 
                 {/* Style injection for responsiveness since we aren't using a full CSS framework */}
                 <style>{`
+          .navbar { padding: 15px 20px !important; }
+          .logo-text { font-size: 1rem !important; }
+          
           @media (min-width: 768px) {
+            .navbar { padding: 15px 40px !important; }
+            .logo-text { font-size: 1.25rem !important; }
             .desktop-menu { display: flex !important; }
             .mobile-toggle { display: none !important; }
           }

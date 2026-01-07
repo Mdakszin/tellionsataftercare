@@ -3,11 +3,14 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
+import ScrollToTop from './components/ScrollToTop';
+import BackToTop from './components/BackToTop';
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -15,6 +18,7 @@ function App() {
           <Route path="about" element={<About />} />
         </Route>
       </Routes>
+      <BackToTop />
     </BrowserRouter>
   );
 }

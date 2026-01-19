@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import heroVideo from '../assets/hero-daycare.mp4';
-import readingImg from '../assets/teacher-reading.jpg';
+import readingImg from '../assets/teacher-reading.webp';
 import SEO from '../components/SEO';
 
 const Home = () => {

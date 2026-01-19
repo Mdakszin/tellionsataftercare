@@ -1,5 +1,5 @@
 import { MapPin } from 'lucide-react';
-import logo from '../assets/tellionsat_logo-removebg-preview.png';
+import logo from '../assets/tellionsat_logo-removebg-preview.webp';
 
 import SEO from '../components/SEO';
 

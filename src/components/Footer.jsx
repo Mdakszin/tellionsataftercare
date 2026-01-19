@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/tellionsat_logo-removebg-preview.png';
+import logo from '../assets/tellionsat_logo-removebg-preview.webp';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const Footer = () => {

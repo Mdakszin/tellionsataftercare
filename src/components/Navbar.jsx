@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/tellionsat_logo-removebg-preview.png';
+import logo from '../assets/tellionsat_logo-removebg-preview.webp';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

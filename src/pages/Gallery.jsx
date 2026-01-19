@@ -21,6 +21,9 @@ const Gallery = () => {
     const classrooms = useMemo(() => getImages(classroomImages), []);
 
     // Use the first classroom image for SEO, or fallback
+    // Note: Since all images are converted to WebP, we should grab the first available from the list
+    // rather than relying on a hardcoded path which might be tricky if filenames changed slightly (extensions did).
+    // The previous implementation used classrooms[0] which is correct.
     const seoImage = classrooms.length > 0 ? classrooms[0] : null;
 
     return (

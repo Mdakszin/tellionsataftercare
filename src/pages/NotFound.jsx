@@ -15,6 +15,7 @@ const NotFound = () => {
             <SEO
                 title="Page Not Found"
                 description="Oops! The page you are looking for doesn't exist."
+                image="/favicon.png"
             />
             <h1 style={{ fontSize: '4rem', color: '#FF8BA7', marginBottom: '1rem' }}>404</h1>
             <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: '#33272a' }}>Oops! Page Not Found</h2>

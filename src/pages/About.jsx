@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react';
+import logo from '../assets/tellionsat_logo-removebg-preview.png';
 
 import SEO from '../components/SEO';
 
@@ -8,6 +9,7 @@ const About = () => {
             <SEO
                 title="About Us"
                 description="Learn about our mission to provide safe and stimulating aftercare. Located at 5953 Apple Cres, Roodekop, Germiston."
+                image={logo}
             />
             <div className="container">
                 <h1 className="text-center mb-4" style={{ color: '#FF8BA7' }}>About Us</h1>

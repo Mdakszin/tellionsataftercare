@@ -1,3 +1,4 @@
+
 import React, { useMemo } from 'react';
 import Carousel from '../components/Carousel';
 import SEO from '../components/SEO';
@@ -19,11 +20,15 @@ const Gallery = () => {
     const funday = useMemo(() => getImages(fundayImages), []);
     const classrooms = useMemo(() => getImages(classroomImages), []);
 
+    // Use the first classroom image for SEO, or fallback
+    const seoImage = classrooms.length > 0 ? classrooms[0] : null;
+
     return (
         <div className="gallery-page py-5">
             <SEO
                 title="Gallery"
                 description="View our facilities including classrooms, playgrounds, and art rooms. See how children learn and play at Tellionsat Aftercare."
+                image={seoImage}
             />
             <div className="container">
                 <div className="text-center mb-5">

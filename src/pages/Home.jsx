@@ -9,6 +9,7 @@ const Home = () => {
             <SEO
                 title="Home"
                 description="Welcome to Tellionsat Aftercare in Roodekop, Germiston. We provide a safe, nurturing environment with educational support, creative arts, and fun activities."
+                image={readingImg}
             />
             {/* Hero Section */}
             <section className="hero" style={{ position: 'relative', height: '80vh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', textAlign: 'center' }}>
